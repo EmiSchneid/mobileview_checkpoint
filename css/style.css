@@ -1,0 +1,119 @@
+img {
+    border: solid 3px black;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+nav {
+    color: darkgray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px 0px 0px;
+    overflow: hidden;
+    background-color: #b4b4b4;
+}
+
+nav li {
+    display: inline;
+    font-size: 25px;
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    width: 7%;
+    text-align: center;
+    float: right;
+}
+
+nav li a {
+    padding: 15px 25px 15px 25px;
+}
+
+nav a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:link {text-decoration: none;}
+
+nav li a:hover:not(.active) {
+    background-color: lightslategray;
+}
+
+.active{
+	/* background: white; */
+    text-transform: uppercase;
+	text-align: center;
+    background-color: #ffffff;
+    border: solid 4px #c965a9;
+}
+
+
+h1 {
+    padding: 50px 0px 30px 0px;
+    margin: 0px 50px 0px 50px;
+}
+
+p {
+    font-size: 22px;
+}
+
+main {
+    margin: 0px 50px 0px 50px;
+}
+
+main li {
+    font-size: 22px;
+}
+
+.container {
+    position: relative;
+    width: 20%;
+  }
+
+.image {
+    /* display: inline; */
+    width: 100%;
+    height: 100%;
+    /* can't figure out why they're acting like block elements */
+}
+
+.overlay {
+    position: absolute;
+    top: .25;
+    bottom: 0;
+    left: 0;
+    right: 5;
+    height: 90%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    /* can't figure out why it's misaligned with the images */
+}
+
+.container:hover .overlay {
+    opacity: 0.75;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    /* don't know what the following lines are...from w3schools */
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+blockquote {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 22px;
+}
+
