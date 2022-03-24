@@ -199,10 +199,14 @@ textarea {
     from {width: 20%}
     to {width: 90%;}
 }
-
-#image-animation {
+.image-animation {
     animation-name: image-grow;
     animation-duration: 4s;
     animation-timing-function: ease-in;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .image-animation {
+      animation: none;
+    }
+}
